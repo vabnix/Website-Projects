@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>    
+	<title>Garden View Guest House | GALLERY</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link href="includes/global.css" rel="stylesheet" type="text/css"/>
+	<link href="includes/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="includes/jquery.min.js"></script>     
+	<script type="text/javascript" src="includes/jquery.lavalamp.js"></script>    
+	<script type="text/javascript" src="includes/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="includes/jquery.lightbox-0.5.js"></script>
+	<style type="text/css">
+	/* jQuery lightBox plugin - Gallery style */
+	.gallery {
+		
+		padding: 10px 0px 0px 10px;
+		width: 605px;
+	}
+	.gallery ul { list-style: none; }
+	.gallery ul li { display: inline-block;margin-left:0px;padding-right:14px;padding-bottom:14px; }
+	.gallery ul img {
+		border: 2px solid #3e3e3e;
+		
+	}
+	.gallery ul a:hover img {
+		border: 2px solid #fff;
+		
+		color: #fff;
+	}
+	.gallery ul a:hover { color: #fff; }
+	</style>
+	<script type="text/javascript">       
+$(function() {            
+	$("#lamp").lavaLamp({                
+	fx: "backout",                 
+	speed: 700,                
+	click: function(event, menuItem) {                    
+	return true;
+	}            
+	});
+	$('#gallery a, #gallery1 a').lightBox();
+	init();
+});    
+</script>
+	<style type="text/css">
+      
+      ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+      ul#tabs li { display: inline; }
+      ul#tabs li a { background-color: #363636; border: 1px solid #363636; border-bottom: none; padding: 0.3em 0.8em; text-decoration: none;color:#E9B724; }
+      ul#tabs li a:hover { color:#ccc; }
+      ul#tabs li a.selected { color: #FFF;background-color: #333; font-weight: bold; padding: 5px 15px; }
+      div.tabContent { border: 1px solid #363636; padding: 0.5em; background-color: #363636; }
+      div.tabContent.hide { display: none; }
+    </style>
+
+	<script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]>
+    
+	//For full source code, visit http://www.dynamicdrive.com
+        
+        var message="";
+        ///////////////////////////////////
+        function clickIE() {if (document.all) {(message);return false;}}
+        function clickNS(e) {if
+        (document.layers||(document.getElementById&&!document.all)) {
+        if (e.which==2||e.which==3) {(message);return false;}}}
+        if (document.layers)
+        {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+        else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+        
+        document.oncontextmenu=new Function("return false")
+    </script>
+</head>
+<body>    
+<div id="wrapper">        
+	 <div id="header">           
+	  <h1><a href="index.html" title="Garden View Guest House">Garden View Guest House</a></h1>           
+	  <div class="hdr_right">                
+	   <div class="contact">                    
+	    <span class="mailid"><a href="mailto:manager@gardenviewhotel.in">manager@gardenviewhotel.in</a></span>
+                    <span class="phone"><a href="javascript:void(0);">+91-5362-221399, 242355</a></span>              
+	   </div>                
+	   <div class="topnav">                    
+		<ul class="lavaLamp" id="lamp">                       
+		 <li><a href="index.html">Home</a></li>                       
+		 <li><a href="location.html">Location</a></li>                        
+		 <li><a href="accommodation.html">Accommodation</a></li>                       
+		 <li><a href="siteseeing.html">Siteseeing</a></li>                       
+		 <li><a href="dining.html">Dining</a></li>                       
+		 <li class="current"><a href="gallery.html">Gallery</a></li>                       
+		 <li><a href="contact.html">Contact Us</a></li>                                   
+        </ul>                
+	   </div>            
+	  </div>
+     </div>
+     <div id="container" class="inner">
+	  <div class="lhs">
+	   <div class="image_section">
+	   <img src="images/innerimg2.jpg" alt="Location" />
+	   </div>
+	   <div class="content">
+	    <h2>Gallery</h2>
+	    <ul id="tabs">
+		<li><a href="#exterior">Exterior</a></li>
+		<li><a href="#rooms">Rooms</a></li>
+		<li><a href="#inauguration">Inauguration</a></li>
+		<li><a href="#misc">Miscellaneous</a></li>
+		<li><a href="#meetings">Meetings &amp; Parties</a></li>
+		<li><a href="#rotaryclub">Rotary Club</a></li>
+	      </ul>
+	    <div id="exterior" class="tabContent">
+		<div id="gallery" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/exterior1.jpg" title="">
+                            	<img src="images/thumb_exterior1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/exterior2.jpg" title="">
+                            	<img src="images/thumb_exterior2.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/exterior3.jpg" title="">
+                            	<img src="images/thumb_exterior3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/exterior4.jpg" title="">
+                            	<img src="images/thumb_exterior4.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/exterior5.jpg" title="">
+                            	<img src="images/thumb_exterior5.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	    <div id="rooms" class="tabContent">
+		<div id="gallery1" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/gallery1.jpg" title="">
+                            	<img src="images/gallery1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/gallery2.jpg" title="">
+                            	<img src="images/gallery2.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/gallery3.jpg" title="">
+                            	<img src="images/gallery3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/gallery4.jpg" title="">
+                            	<img src="images/gallery4.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/gallery6.jpg" title="">
+                            	<img src="images/gallery6.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="images/gallery5.jpg" title="">
+                            	<img src="images/gallery5.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/gallery7.jpg" title="">
+                            	<img src="images/gallery7.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/gallery8.jpg" title="">
+                            	<img src="images/gallery8.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/gallery9.jpg" title="">
+                            	<img src="images/gallery9.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/gallery10.jpg" title="">
+                            	<img src="images/gallery10.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	    <div id="inauguration" class="tabContent">
+		<div id="gallery" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/inauguration1.jpg" title="">
+                            	<img src="images/thumb_inauguration1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/inauguration2.jpg" title="">
+                            	<img src="images/thumb_inauguration2.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/inauguration3.jpg" title="">
+                            	<img src="images/thumb_inauguration3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/inauguration4.jpg" title="">
+                            	<img src="images/thumb_inauguration4.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/inauguration5.jpg" title="">
+                            	<img src="images/thumb_inauguration5.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="images/inauguration6.jpg" title="">
+                            	<img src="images/thumb_inauguration6.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			
+			<li>
+                        	<a href="images/inauguration7.jpg" title="">
+                            	<img src="images/thumb_inauguration7.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/inauguration8.jpg" title="">
+                            	<img src="images/thumb_inauguration8.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/inauguration9.jpg" title="">
+                            	<img src="images/thumb_inauguration9.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/inauguration10.jpg" title="">
+                            	<img src="images/thumb_inauguration10.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	    <div id="misc" class="tabContent">
+		<div id="gallery" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/misc1.jpg" title="">
+                            	<img src="images/thumb_misc1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/misc2.jpg" title="">
+                            	<img src="images/thumb_misc2.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/misc3.jpg" title="">
+                            	<img src="images/thumb_misc3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	    <div id="meetings" class="tabContent">
+		<div id="gallery" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/meeting1.jpg" title="">
+                            	<img src="images/thumb_meeting1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/meeting2.jpg" title="">
+                            	<img src="images/thumb_meeting2.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/meeting3.jpg" title="">
+                            	<img src="images/thumb_meeting3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/meeting4.jpg" title="">
+                            	<img src="images/thumb_meeting4.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="images/meeting5.jpg" title="">
+                            	<img src="images/thumb_meeting5.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	    <div id="rotaryclub" class="tabContent">
+		<div id="gallery" class="gallery">
+                	<ul>
+
+                    	<li>
+                        	<a href="images/r1.jpg" title="">
+                            	<img src="images/thumb_rotary1.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/r2.jpg" title="">
+                            	<img src="images/thumb_rotary2.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/r3.jpg" title="">
+                            	<img src="images/thumb_rotary3.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/r4.jpg" title="">
+                            	<img src="images/thumb_rotary4.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="images/r5.jpg" title="">
+                            	<img src="images/thumb_rotary5.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+			<li>
+                        	<a href="images/r6.jpg" title="">
+                            	<img src="images/thumb_rotary6.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/r7.jpg" title="">
+                            	<img src="images/thumb_rotary7.jpg" width="100" height="100" alt="" />
+                            </a>
+
+                        </li>
+                    	<li>
+                        	<a href="images/r8.jpg" title="">
+                            	<img src="images/thumb_rotary8.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="images/r9.jpg" title="">
+                            	<img src="images/thumb_rotary9.jpg" width="100" height="100" alt="" />
+
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="images/r10.jpg" title="">
+                            	<img src="images/thumb_rotary10.jpg" width="100" height="100" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- / gallery -->
+	    </div>
+	   </div>
+	  </div>
+	  <div class="rhs">
+	   <ul>
+	    <li class="special_off"><a href="specialoffer.html" title="Special Offers">Special Offers</a></li>
+	    <li class="rhs_photo1"></li>
+	    <li class="rhs_photo2"></li>
+	   </ul>
+	  </div>
+	   <br class="clear" />
+	 </div>
+</div>
+	 <div id="footer">
+        
+		<div class="footer_content">
+            
+		 <div class="foot_left">
+<p>Copyright &copy; 2011, Garden View Guest House, All Rights Reserved</p>
+           		 </div>            
+		 <div class="foot_right"><p>| a Vabnix design</p></div>
+	        </div>
+    	 </div>
+</body>
+</html>
+
+	
+        

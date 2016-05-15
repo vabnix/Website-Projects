@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+       <meta charset="utf-8">
+        <title>Practicing WebPage Design</title>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="Vaibhav Srivastava">
+        
+        <!-- Mobile specific content -->
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        
+        <style>
+           body {
+               padding-top: 50px;
+           }
+        </style>
+    </head>
+<body>
+     
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+           <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+                 <span class="sr-only">Toggle Navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 </button>
+                 <a href="#" class="navbar-brand">Vaibhav Srivastava</a>
+               </div>
+               
+               <div class="collapse navbar-collapse" id="example-nav-collapse">
+                 <ul class="nav navbar-nav">
+                     <li>
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">C#.Net</a></li>
+                            <li><a href="#">ASP.Net</a></li>
+                            <li><a href="#">WCF</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">MVC</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Web Services</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#section-features">Features</a></li>
+                     <li><a href="#section-contact">Contact</a></li>
+                </ul>
+                   
+                <form action="" role="form" class="navbar-form navbar-right">
+               <div class="form-group">
+                    <input type="text" class="form-control" id="username" placeholder="Enter Email">      
+                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <button class="btn btn-primary" id="btn-signin">Sign In</button>
+                    <button class="btn btn-link" id="rest_pass">Reset Password ?</button>
+                </div>
+           </form>
+               </div>
+        </div>
+        </nav>
+    <div class="jumbotron">
+         <div class="container text-center">
+             <h1>Learning Course</h1>
+             <p>This page is built using Bootstrap ! Come join us today</p>
+             
+             <div class="btn-group">
+               <a href="#section-trial" class="btn btn-lg btn-success">Buy Now!</a>
+               <a href="#section-trial" class="btn btn-lg btn-default">Try it Free</a>
+             </div>
+        </div>
+        </div>
+    <div class="container">
+        <!-- TESTIMONIAL SECTION -->
+        <section> 
+        <div class="page-header" id="section-testimonials">
+               <h2>Testimonials.<small>This is what customer has to say about us.</small></h2>
+               
+               <div class="row">
+                  <div class="col-lg-4">
+                     <blockquote>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                         <footer>Site Authors</footer>
+                      </blockquote>
+                   </div>
+                   <div class="col-lg-4">
+                     <blockquote>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                         <footer>Site Authors</footer>
+                      </blockquote>
+                   </div>
+                   <div class="col-lg-4">
+                     <blockquote>
+                        <p><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</em></p>
+                         <footer>Site Authors</footer>
+                      </blockquote>
+                   </div>
+               </div>
+            
+               <p class="text-center"><em>Wanna tell us about the course ? Head over to People Voice</em></p>
+               <p class="text-center"><a href="#section-contact" class="btn btn-default">People Voice</a></p>
+           </div>
+          </section>
+        <!-- FEATURES SECTION -->
+        <section>
+           <div class="page-header" id="section-features">
+               <h2>Features. <small><em> What its all about.</em></small></h2>
+               <div class="row">
+                 <div class="col-lg-4">
+                    <div class="panel panel-default text-center">
+                       <div class="panel-body">
+                          <span class="glyphicon glyphicon-search"></span>
+                           
+                           <h4>This is a smaller feature</h4>
+                           <p><em>Learning C#.net made easy and simple. Integrate Bootstrap</em></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col-lg-4">
+                    <div class="panel panel-default text-center">
+                       <div class="panel-body">
+                          <span class="glyphicon glyphicon-qrcode"></span>
+                           
+                           <h4>This is a smaller feature</h4>
+                           <p><em>Learning WCF/WebServices made easy. Integrate Bootstrap</em></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col-lg-4">
+                    <div class="panel panel-default text-center">
+                       <div class="panel-body">
+                          <span class="glyphicon glyphicon-fire"></span>
+                           
+                           <h4>This is a smaller feature</h4>
+                           <p><em>Learning ASP.Net/MVC made easy. Integrate Bootstrap</em></p>
+                        </div>
+                     </div>
+                   </div>
+               </div>
+            </div>   
+        </section>
+        
+        <!-- TRAIL -->
+        <section>
+           <div class="well" id="section-trial">
+              <div class="container text-center">
+                 <h3>Subscribe now for 30-days free trial!</h3>
+                  <p>Enter your name and email below</p>
+                  
+                  <form action="#" class="form-inline" role="form">
+                    <div class="form-group">
+                        <label for="subscribe-name" class="sr-only">Name</label>
+                        <input type="text" class="form-control" id="subscribe-name" placeholder="Name">
+                        <input type="text" class="form-control" id="subscribe-name" placeholder="Email address">
+                        <button type="submit" class="btn btn-default">Subscribe</button>
+                        <p><small><em>We only use your email address for sending the download link</em></small></p>
+                      </div>
+                  </form>
+               </div>
+            </div>
+            
+        </section>
+           
+        <!-- F.A.Q. --->
+        
+        
+        <!-- Contact Us -->
+        <section>
+           <div class="page-header" id="section-contact">
+              <h2>Contact Us. <small>Let's get in touch</small></h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                  <p>To send us a message, use the contact form or the information below.</p>
+                  
+                  <address>
+                     <strong>Vaibhav Srivastava</strong><br>
+                      <em>65, Prospect Street<br>
+                      Stamford, CT, 06901<br>
+                      USA</em><br>
+                      <abbr title="Phone">P:203-570-5483</abbr>
+                  </address>
+                </div>
+                <div class="col-lg-8">
+                   <form action="#" class="form-horizontal" role="form">
+                       <div class="form-group">
+                         <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                         <div class="col-lg-10">
+                           <em><input type="text" class="form-control" id="contact-name" placeholder="name"></em>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                         <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                         <div class="col-lg-10">
+                           <em><input type="text" class="form-control" id="contact-email" placeholder="email address"></em>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                         <label for="contact-website" class="col-lg-2 control-label">Website</label>
+                         <div class="col-lg-10">
+                           <em><input type="url" class="form-control" id="contact-website" placeholder="website"></em>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                         <label for="contact-message" class="col-lg-2 control-label">Message</label>
+                         <div class="col-lg-10">
+                           <em><textarea name="contact-message" id="contact-message" class="form-control" cols="30" rows="8" placeholder="enter your message here...."></textarea></em>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <div class="col-lb-10 col-lg-offset-10">
+                             <button type="submit" class="btn btn-primary">Send Message</button>
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+          
+        </div>
+    </header>
+    
+    <footer>
+       <hr>
+        <div class="container text-center">
+        <ul class="list-inline">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+        
+        <p>&copy; copyright 2015 | Vaibhav Srivastava</p>
+        </div>
+    </footer>
+</body>
+</html>

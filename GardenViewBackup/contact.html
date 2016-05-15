@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>    
+	<title>Garden View Guest House | Contact Us</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link href="includes/global.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="includes/jquery.min.js"></script>     
+	<script type="text/javascript" src="includes/jquery.lavalamp.js"></script>    
+	<script type="text/javascript" src="includes/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="includes/jquery.validate.js"></script>
+	<script type="text/javascript">       
+$(function() {            
+$("#lamp").lavaLamp({                
+fx: "backout",                 
+speed: 700,                
+click: function(event, menuItem) {                    
+return true;
+}            
+});
+$("#contactform").validate({
+  rules: {
+    email: "required",
+    cemail: {
+      equalTo: "#email"
+    }
+  }
+});
+});
+
+
+
+
+      
+</script>
+</head>
+<body>    
+<div id="wrapper">        
+	 <div id="header">           
+	  <h1><a href="index.html" title="Garden View Guest House">Garden View Guest House</a></h1>           
+	  <div class="hdr_right">                
+	   <div class="contact">                    
+	    <span class="mailid"><a href="mailto:manager@gardenviewhotel.in">manager@gardenviewhotel.in</a></span>
+                    <span class="phone"><a href="javascript:void(0);">+91-5362-221399, 242355</a></span>              
+	   </div>                
+	   <div class="topnav">                    
+		<ul class="lavaLamp" id="lamp">                       
+		 <li><a href="index.html">Home</a></li>                       
+		 <li><a href="location.html">Location</a></li>                        
+		 <li><a href="accommodation.html">Accommodation</a></li>                       
+		 <li><a href="siteseeing.html">Siteseeing</a></li>                       
+		 <li><a href="dining.html">Dining</a></li>                       
+		 <li><a href="gallery.html">Gallery</a></li>                       
+		 <li class="current"><a href="contact.html">Contact Us</a></li>                                   
+        </ul>                
+	   </div>            
+	  </div>
+     </div>
+     <div id="container" class="inner">
+	<div class="outerimg contactinner">
+            <div class="mainimg"><img src="images/img_contact.jpg"/></div>
+            </div>
+	  <div class="lhs">
+	   <div class="content">
+		
+	    <h2>Contact Us</h2>
+	    <div  class="emailcontent">
+	    <h3><strong>E-mail us @</strong> </h3>
+			<p><strong>&raquo; Reach Manager:</strong> <a href="mailto:manager@gardenviewhotel.in">manager@gardenviewhotel.in</a><br/>
+			<strong>Send your feedback:</strong> <a href="mailto:sundeep@gardenviewhotel.in">sundeep@gardenviewhotel.in</a><br/>
+			<strong>Contact Us:</strong> <a href="mailto:contactus@gardenviewhotel.in">contactus@gardenviewhotel.in</a>
+		     </p>
+	    </div>
+	     <p><strong>GARDEN VIEW GUEST HOUSE</strong></p>
+	     <p>1162, SIRWARA ROAD,</p>
+	     <p>SULTANPUR - 228001.</p>
+	     <p><strong>Telephone:</strong> +91 5362 242355</p>
+	     <p><strong>Telephone:</strong> +91 5362 221399</p>
+	     <div class="cont_bottom">
+	     <p>We look forward to hearing from you. Your reviews and feedback help us to serve you better. It would be our Endeavour to meet your expectations and surpass them. We appreciate your thoughts and encourage you to use the form below. Please send us your valuable comments and suggestions</p>
+	     </div>
+	     
+		<form action="sendmail.php" method="post" id="contactform"> 
+			<div class="row">
+			<label for="firstname">First Name* </label>
+			<input type="text" name="firstname" id="firstname" class="required" />
+			</div>
+			<div class="row">
+			<label for="lastname">Last Name* </label>
+			<input type="text" name="lastname" id="lastname" class="required" />
+			</div>
+			<br class="clear"/>
+			<div class="row">
+			<label for="email">Email id *</label>
+			<input type="text" name="email" id="email" class="email required" />
+			</div>
+			<div class="row">
+			<label for="cemail">Confirm Email id* </label>
+			<input type="text" name="cemail" id="cemail" class="email required"/>
+			</div>
+			<br class="clear"/>
+			<div class="row">
+			<label for="country">Country of residence* </label>
+			<input type="text" name="country" id="country" class="required"/>
+			</div>
+			<div class="row">
+			<label for="notify">Would you like to receive updates from Garen View Hotel?* </label>
+			Yes <input type="radio" class="radiobtn" value="Yes" name="notify" id="notify" checked="checked" /> No <input type="radio" value="No" class="radiobtn" name="notify" id="notify" />
+			</div>
+			<br class="clear"/>
+			<div class="row1">
+			<label for="comments">Comments* </label>
+			<textarea name="comments" id="comments" class="required"></textarea>
+			</div>
+			<div class="clear"></div>
+			<div class="btns">
+				<input type="submit" value="Submit"/>
+				<input type="reset" value="Reset"/>
+				
+			</div>
+		</form>
+	   </div>
+	  </div>
+	  <div class="rhs">
+	   <ul>
+	    <li class="rhs_photo1 loc2"></li>
+	    <li class="rhs_photo2 loc3"></li>
+	   </ul>
+	  </div>
+	   <br class="clear" />
+	 </div>
+</div>
+	 <div id="footer">
+        
+		<div class="footer_content">
+            
+		 <div class="foot_left">
+<p>Copyright &copy; 2011, Garden View Guest House, All Rights Reserved</p>
+           		 </div>            
+		 <div class="foot_right"><p>| a Vabnix design</p></div>
+	        </div>
+    	 </div>
+</body>
+</html>
+
+	
+        
